@@ -1,6 +1,6 @@
 <skin>
-  <!-- RevolutionBlack for HDMUTeam design by JKM73 V.3.0.0 -->
-  <!-- Skin mod for Open PLi by .:MarcinO:. (c)2013-->
+  <!-- RevolutionBlack Mod Eurosat -->
+  <!-- Skin mod Eurosat (c)2015-->
   <output id="0">
     <resolution xres="1280" yres="720" bpp="32" />
   </output>
@@ -68,6 +68,7 @@
     <color name="unff6600" value="#00ff6600" />
     <color name="unffc000" value="#00ffc000" />
     <color name="white" value="#00ffffff" />
+    <color name="mio" value="#786E6E" />
     <color name="yellow" value="#002b7012" />
   </colors>
   <fonts>
@@ -6018,5 +6019,45 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget source="key_red" render="Label" position="100,637" zPosition="2" size="200,25" halign="left" valign="center" font="Regular;20" backgroundColor="black" transparent="1" />
     <widget source="key_green" render="Label" position="330,637" zPosition="2" size="200,25" halign="left" valign="center" font="Regular;20" backgroundColor="black" transparent="1" />
     <widget source="key_yellow" render="Label" position="560,637" zPosition="2" size="200,25" halign="left" valign="center" font="Regular;20" backgroundColor="black" transparent="1" />
+  </screen>
+    <screen name="Infopanel" position="0,0" size="1280,720" title="INFO Panel" flags="wfNoBorder" backgroundColor="transparent">
+    <ePixmap position="0,0" size="1280,720" zPosition="-1" pixmap="RevolutionBlack/extra/eus.png" />
+    <ePixmap position="48,160" size="650,450" zPosition="5" pixmap="RevolutionBlack/extra/uplist.png" alphatest="blend" transparent="1" />
+    <ePixmap position="754,184" size="483,444" zPosition="2" pixmap="RevolutionBlack/menu/log.png" alphatest="blend" transparent="1" />
+    <widget source="Title" render="Label" halign="left" position="40,39" size="536,103" font="Regular; 78" backgroundColor="background1" transparent="1" />
+    <widget source="global.CurrentTime" render="Label" position="1115,104" size="121,29" font="Regular; 25" backgroundColor="transpyellow" transparent="1" foregroundColor="lightgrey" halign="center">
+      <convert type="ClockToText">Format:%d.%m.%Y</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="1110,60" size="130,45" font="Regular; 45" backgroundColor="transpyellow" transparent="1" foregroundColor="lightgrey" halign="center" valign="center">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget name="Mlist" position="48,160" size="650,450" zPosition="5" scrollbarMode="showNever" transparent="1" />
+    <widget name="label1" position="52,641" size="641,30" font="Regular; 24" transparent="1" foregroundColor="lightgrey" halign="center" backgroundColor="black" />
+  </screen>
+  <screen name="SoftcamPanel" position="0,0" size="1280,720" title="Softcam Panel" flags="wfNoBorder" backgroundColor="transpyellow">
+    <ePixmap position="0,0" size="1280,720" zPosition="-1" pixmap="RevolutionBlack/extra/eus.png" />
+    <ePixmap pixmap="RevolutionBlack/menu/camd.png" zPosition="2" position="835,283" size="256,256" alphatest="blend" transparent="1" />
+    <widget source="Title" render="Label" halign="left" position="40,39" size="536,103" font="Regular; 78" backgroundColor="background1" transparent="1" />
+    <widget source="global.CurrentTime" render="Label" position="1115,104" size="121,29" font="Regular; 25" backgroundColor="transpyellow" transparent="1" foregroundColor="lightgrey" halign="center">
+      <convert type="ClockToText">Format:%d.%m.%Y</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="1110,60" size="130,45" font="Regular; 45" backgroundColor="transpyellow" transparent="1" foregroundColor="lightgrey" halign="center" valign="center">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <eLabel backgroundColor="grey" position="50,316" size="642,1" zPosition="1" foregroundColor="transpyellow" />
+    <eLabel backgroundColor="grey" position="50,359" size="642,1" zPosition="1" foregroundColor="transpyellow" />
+    <widget font="Regular;18" name="camcount" position="627,326" size="60,25" transparent="1" />
+    <widget name="config" position="50,209" size="642,100" transparent="1" font="Replacement; 22" backgroundColor="transpyellow" />
+    <ePixmap pixmap="RevolutionBlack/buttons/red.png" position="49,159" size="25,25" alphatest="blend" />
+    <ePixmap pixmap="RevolutionBlack/buttons/green.png" position="211,159" size="25,25" alphatest="blend" />
+    <ePixmap pixmap="RevolutionBlack/buttons/yellow.png" position="373,159" size="25,25" alphatest="blend" />
+    <ePixmap pixmap="RevolutionBlack/buttons/blue.png" position="538,159" size="25,25" alphatest="blend" />
+    <widget font="Replacement; 24" halign="center" name="key_red" position="82,158" size="120,35" transparent="1" valign="center" zPosition="2" backgroundColor="background1" />
+    <widget font="Replacement; 24" halign="center" name="key_green" position="225,158" size="130,35" transparent="1" valign="center" zPosition="2" backgroundColor="background1" />
+    <widget font="Replacement; 24" halign="center" name="key_yellow" position="378,157" size="150,35" transparent="1" valign="center" zPosition="2" backgroundColor="background1" />
+    <widget font="Replacement; 24" halign="center" name="key_blue" position="563,157" size="150,35" transparent="1" valign="center" zPosition="2" backgroundColor="background1" />
+    <widget font="Replacement; 22" name="actifcam" position="53,322" size="303,32" transparent="0" backgroundColor="mio" />
+    <widget font="Regular; 22" name="actifcam2" position="370,322" size="246,32" transparent="0" backgroundColor="mio" />
+    <widget font="Replacement; 22" name="ecminfo" position="50,364" size="642,308" transparent="0" backgroundColor="mio" foregroundColor="grey" />
   </screen>
 </skin>
