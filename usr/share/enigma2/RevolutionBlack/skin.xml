@@ -6020,7 +6020,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget source="key_green" render="Label" position="330,637" zPosition="2" size="200,25" halign="left" valign="center" font="Regular;20" backgroundColor="black" transparent="1" />
     <widget source="key_yellow" render="Label" position="560,637" zPosition="2" size="200,25" halign="left" valign="center" font="Regular;20" backgroundColor="black" transparent="1" />
   </screen>
-    <screen name="Infopanel" position="0,0" size="1280,720" title="INFO Panel" flags="wfNoBorder" backgroundColor="transparent">
+    <screen name="EuroSatpanel" position="0,0" size="1280,720" title="EuroSat Panel" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap position="0,0" size="1280,720" zPosition="-1" pixmap="RevolutionBlack/extra/eus.png" />
     <ePixmap position="48,160" size="650,450" zPosition="5" pixmap="RevolutionBlack/extra/uplist.png" alphatest="blend" transparent="1" />
     <ePixmap position="754,184" size="483,444" zPosition="2" pixmap="RevolutionBlack/menu/log.png" alphatest="blend" transparent="1" />
